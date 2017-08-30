@@ -61,3 +61,9 @@ gem 'bootstrap' , '~> 4.0.0.beta'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether','>= 1.3.3'
 end
+
+# simple form
+gem 'simple_form'
+
+# device for authentification
+gem 'devise'
