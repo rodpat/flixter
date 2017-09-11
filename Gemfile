@@ -67,3 +67,6 @@ gem 'simple_form'
 
 # device for authentification
 gem 'devise'
+
+#carrerwave
+gem 'carrierwave', '~> 1.0'
