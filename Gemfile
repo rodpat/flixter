@@ -70,3 +70,12 @@ gem 'devise'
 
 #carrerwave
 gem 'carrierwave', '~> 1.0'
+
+#figaro
+gem "figaro"
+
+#fog 
+gem "fog-aws"
+
+#mini_magick
+gem 'mini_magick'
