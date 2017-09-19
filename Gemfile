@@ -71,6 +71,9 @@ gem 'devise'
 #carrerwave
 gem 'carrierwave', '~> 1.0'
 
+#carrierwave aws
+gem 'carrierwave-aws'
+
 #figaro
 gem "figaro"
 
@@ -79,3 +82,4 @@ gem "fog-aws"
 
 #mini_magick
 gem 'mini_magick'
+
