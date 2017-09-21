@@ -83,3 +83,5 @@ gem "fog-aws"
 #mini_magick
 gem 'mini_magick'
 
+#stripe
+gem 'stripe'
