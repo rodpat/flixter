@@ -85,3 +85,6 @@ gem 'mini_magick'
 
 #stripe
 gem 'stripe'
+
+# ranked model for reording the lessons
+gem 'ranked-model'
