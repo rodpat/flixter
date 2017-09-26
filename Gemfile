@@ -88,3 +88,6 @@ gem 'stripe'
 
 # ranked model for reording the lessons
 gem 'ranked-model'
+
+#installing a gem file jQuery UI
+gem 'jquery-ui-rails'
