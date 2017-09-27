@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 
 body{
   background: image_url('bg.png');  
@@ -108,6 +109,9 @@ abbr[title]
   background-color: black;
   margin-top: 10px;
   height: 130px;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
 }
 
 .lesson a{
@@ -125,5 +129,67 @@ abbr[title]
 .section{
   border: 1px solid;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  border-radius: 11px 11px 11px 11px;
+  -moz-border-radius: 11px 11px 11px 11px;
+  -webkit-border-radius: 11px 11px 11px 11px;
   padding: 20px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.section-li{
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  border-radius: 11px 11px 11px 11px;
+  -moz-border-radius: 11px 11px 11px 11px;
+  -webkit-border-radius: 11px 11px 11px 11px;
+  padding: 20px;
+  margin: 20px;
+  
+}
+
+ul header{
+  font-size: 25px;
+}
+
+ul header .fa{
+  font-size: 20px;
+}
+
+.lessons li{
+  background: black;
+  color: white;
+  margin: 10px;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+}
+
+.lessons li b{
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.lessons li p{
+  margin: 0;
+}
+
+.section-lesson p{
+  color: white;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 5px 0;
+    padding: 0; 
+    width: 90%;
 }

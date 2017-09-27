@@ -91,3 +91,6 @@ gem 'ranked-model'
 
 #installing a gem file jQuery UI
 gem 'jquery-ui-rails'
+
+#font-awesome
+gem 'font-awesome-rails'
