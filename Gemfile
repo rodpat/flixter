@@ -94,3 +94,6 @@ gem 'jquery-ui-rails'
 
 #font-awesome
 gem 'font-awesome-rails'
+
+#use Hirb for better database table display
+gem 'hirb','0.7.3'

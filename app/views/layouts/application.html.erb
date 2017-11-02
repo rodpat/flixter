@@ -56,27 +56,25 @@
 
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-3">
+        <div class="row mr-auto ml-auto ">
+          <div class="col-12 col-sm-3 ">
             <b>Teachers</b>
             <br>
-            <%= link_to 'Teach a Course', new_instructor_course_path %>
+            <%= link_to 'Teach a Course', new_instructor_course_path, class:'text-footer-links' %>
             <br>
-            <%= link_to 'My Dashboard', dashboard_path %>
+            <%= link_to 'My Dashboard', dashboard_path, class:'text-footer-links' %>
           </div>
           <div class="col-12 col-sm-3">
             <b>About</b>
             <br>
-            <%= link_to 'Teach a Course', new_instructor_course_path %>
+            <%= link_to 'Team', '#', class:'text-footer-links' %>
             <br>
-            <%= link_to 'Team', '#' %>
+            <%= link_to 'Carrers', '#', class:'text-footer-links' %>
             <br>
-            <%= link_to 'Carrers', '#' %>
-            <br>
-            <%= link_to 'Privacy Policy', privacy_path %>
+            <%= link_to 'Privacy Policy', privacy_path, class:'text-footer-links' %>
           </div>
-          <div class="col-12 col-sm-3">
-            <b>Contact</b>
+          <div class="col-12 col-sm-3 text-footer">
+            <b class="title">Contact</b>
             <br>
             testrod[@]gmail.com
             <br>

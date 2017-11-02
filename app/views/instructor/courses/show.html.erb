@@ -1,41 +1,22 @@
-<script>
-  $(function(){
 
-    $('.new-lesson-button').click(function(event){
-      var lessonUrl = ($(event.target).data('lesson-url') );
-      $('#newLessonForm').attr('action', lessonUrl);
-    });
-
-
-    $('.lessons').sortable({
-      update: function(event, ui){
-        $.ajax({
-          type: 'PUT',
-          url: ui.item.data('update-url'),
-          dataType: 'json',
-          data: {lesson: {row_order_position: ui.item.index()}}
-        });
-      }
-    });
-
-
-    $('.sections').sortable({
-      update: function(event, ui){
-        $.ajax({
-          type: 'PUT',
-          url: ui.item.data('update-url'),
-          dataType: 'json',
-          data: {section: {row_order_position: ui.item.index()}}
-        });
-      }
-    });
-  });
-</script>
 <br>
 <div class="booyah-box col-10 mr-auto ml-auto">
   <h1 class="text-center"><%= current_course.title %></h1>
   <br>
-  <%= image_tag current_course.image, class: 'img-fluid' %>
+  <div class="row">
+    <div class="col-sm-8 mr-auto ml-auto">
+      <%= image_tag current_course.image, class: 'img-fluid' %>
+    </div>  
+  </div>
+  <div class="row">
+    <div class="col-10">
+      <p><%= current_course.description %></p>
+    </div>
+    <p>
+            <%= link_to 'Preview as Student', course_path(current_course), class: 'btn btn-warning' %>
+          </p>
+  </div>
+
   <br><br>
    <div class="text-center">
       <!-- Button trigger modal -->
@@ -64,9 +45,7 @@
               </button>
             </div>
            </div>
-           
-                        
-            <br class="clr">
+                                  
             <br class="clr">
             <ul class="lessons ">
               <% section.lessons.rank(:row_order).each do |lesson| %>
@@ -153,3 +132,36 @@
     </div>
   </div>
 </div>
+<script>
+  $(function(){
+
+    $('.new-lesson-button').click(function(event){
+      var lessonUrl = $(event.target).data('lesson-url');
+      $('#newLessonForm').attr('action', lessonUrl);
+    });
+
+
+    $('.lessons').sortable({
+      update: function(event, ui){
+        $.ajax({
+          type: 'PUT',
+          url: ui.item.data('update-url'),
+          dataType: 'json',
+          data: {lesson: {row_order_position: ui.item.index()}}
+        });
+      }
+    });
+
+
+    $('.sections').sortable({
+      update: function(event, ui){
+        $.ajax({
+          type: 'PUT',
+          url: ui.item.data('update-url'),
+          dataType: 'json',
+          data: {section: {row_order_position: ui.item.index()}}
+        });
+      }
+    });
+  });
+</script>
